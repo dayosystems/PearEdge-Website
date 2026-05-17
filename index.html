@@ -1,78 +1,510 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>PearEdge Technologies Limited</title>
+export default function PearEdgeWebsite() {
+  return (
+    <div className="min-h-screen bg-white text-slate-900 dark:bg-[#07111F] dark:text-white transition-colors duration-300">
+      {/* ================= NAVBAR ================= */}
+      <header className="sticky top-0 z-50 backdrop-blur border-b border-slate-200 dark:border-slate-800 bg-white/90 dark:bg-[#07111F]/90">
+        <div className="max-w-7xl mx-auto px-6 py-4 flex items-center justify-between">
+          <div className="flex items-center gap-3">
+            {/* Replace with actual logo */}
+            {/* Company logo here */}
+            <div className="w-10 h-10 rounded-xl bg-[#0A2C5A] flex items-center justify-center text-white font-bold">
+              P
+            </div>
+            <div>
+              <h1 className="font-bold text-lg">PEAREDGE TECHNOLOGIES LTD</h1>
+              <p className="text-xs text-slate-500 dark:text-slate-400">
+                Technology • STEM • Innovation
+              </p>
+            </div>
+          </div>
 
-  <style>
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family:Arial, sans-serif;
-    }
+          <nav className="hidden lg:flex gap-8 text-sm font-medium">
+            <a href="#home" className="hover:text-[#3BA4F7] transition">Home</a>
+            <a href="#about" className="hover:text-[#3BA4F7] transition">About</a>
+            <a href="#services" className="hover:text-[#3BA4F7] transition">ICT Solutions</a>
+            <a href="#stem" className="hover:text-[#3BA4F7] transition">STEM Education</a>
+            <a href="#innovation" className="hover:text-[#3BA4F7] transition">Smart Systems</a>
+            <a href="#projects" className="hover:text-[#3BA4F7] transition">Projects</a>
+            <a href="#contact" className="hover:text-[#3BA4F7] transition">Contact</a>
+          </nav>
 
-    body{
-      background:#0f172a;
-      color:white;
-      display:flex;
-      justify-content:center;
-      align-items:center;
-      height:100vh;
-      text-align:center;
-      padding:20px;
-    }
+          <a
+            href="https://wa.me/2347076339314"
+            className="bg-[#0A2C5A] hover:bg-[#3BA4F7] text-white px-5 py-3 rounded-xl text-sm font-semibold transition"
+          >
+            Request Support
+          </a>
+        </div>
+      </header>
 
-    .container{
-      max-width:700px;
-    }
+      {/* ================= HERO ================= */}
+      <section
+        id="home"
+        className="relative overflow-hidden"
+      >
+        <div className="absolute inset-0 bg-gradient-to-br from-[#0A2C5A] via-[#07111F] to-[#3BA4F7] opacity-95"></div>
 
-    h1{
-      font-size:3rem;
-      margin-bottom:15px;
-      color:#38bdf8;
-    }
+        <div className="relative max-w-7xl mx-auto px-6 py-28 lg:py-36 grid lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <div className="inline-flex items-center gap-2 bg-white/10 border border-white/20 rounded-full px-4 py-2 text-white text-sm mb-6">
+              Building Africa Through Technology & Innovation
+            </div>
 
-    p{
-      font-size:1.1rem;
-      line-height:1.8;
-      color:#cbd5e1;
-    }
+            <h1 className="text-5xl lg:text-7xl font-black leading-tight text-white">
+              Future-Ready
+              <span className="block text-[#3BA4F7]">Technology Ecosystem</span>
+            </h1>
 
-    .email{
-      margin-top:25px;
-      font-size:1rem;
-    }
+            <p className="mt-8 text-lg text-slate-200 leading-relaxed max-w-2xl">
+              PEAREDGE TECHNOLOGIES LTD delivers enterprise ICT solutions,
+              practical STEM education, and intelligent smart systems designed
+              to solve real-world African challenges.
+            </p>
 
-    a{
-      color:#38bdf8;
-      text-decoration:none;
-    }
+            <div className="flex flex-wrap gap-4 mt-10">
+              <a
+                href="#services"
+                className="bg-white text-[#0A2C5A] hover:bg-[#3BA4F7] hover:text-white px-7 py-4 rounded-2xl font-semibold transition"
+              >
+                Explore Services
+              </a>
 
-    a:hover{
-      text-decoration:underline;
-    }
-  </style>
-</head>
+              <a
+                href="#stem"
+                className="border border-white/30 text-white hover:bg-white/10 px-7 py-4 rounded-2xl font-semibold transition"
+              >
+                STEM Programs
+              </a>
+            </div>
 
-<body>
+            <div className="grid grid-cols-3 gap-6 mt-14">
+              <div>
+                <h3 className="text-3xl font-bold text-white">10+</h3>
+                <p className="text-slate-300 text-sm">Years Experience</p>
+              </div>
 
-  <div class="container">
-    <h1>PearEdge Technologies Limited</h1>
+              <div>
+                <h3 className="text-3xl font-bold text-white">24/7</h3>
+                <p className="text-slate-300 text-sm">Emergency Support</p>
+              </div>
 
-    <p>
-      Innovative technology solutions designed to power businesses,
-      drive digital transformation, and create smarter experiences.
-    </p>
+              <div>
+                <h3 className="text-3xl font-bold text-white">3</h3>
+                <p className="text-slate-300 text-sm">Core Divisions</p>
+              </div>
+            </div>
+          </div>
 
-    <div class="email">
-      Contact: 
-      <a href="mailto:info@pearedge.com.ng">
-        info@pearedge.com.ng
-      </a>
+          <div className="relative">
+            {/* Replace with futuristic African technology image */}
+            {/* Suggested Image: African engineers working with advanced technology systems */}
+            <div className="bg-white/10 backdrop-blur-xl border border-white/20 rounded-3xl p-8 shadow-2xl">
+              <div className="grid grid-cols-2 gap-5">
+                <div className="bg-white rounded-2xl p-6">
+                  <h3 className="font-bold text-[#0A2C5A] text-lg">ICT Solutions</h3>
+                  <p className="text-sm text-slate-600 mt-3">
+                    Enterprise IT support, repairs, procurement, and maintenance.
+                  </p>
+                </div>
+
+                <div className="bg-[#D4AF37] rounded-2xl p-6 text-[#07111F]">
+                  <h3 className="font-bold text-lg">STEM Education</h3>
+                  <p className="text-sm mt-3">
+                    Coding, robotics, electronics, and future-ready skills.
+                  </p>
+                </div>
+
+                <div className="bg-[#3BA4F7] rounded-2xl p-6 text-white col-span-2">
+                  <h3 className="font-bold text-lg">Smart Systems</h3>
+                  <p className="text-sm mt-3 max-w-xl">
+                    Intelligent systems, EdgeML, AI automation, IoT, robotics,
+                    and innovation for African challenges.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= ABOUT ================= */}
+      <section id="about" className="py-28 bg-slate-50 dark:bg-[#0B1728]">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-2 gap-20 items-center">
+          <div>
+            {/* Replace with actual office/team image */}
+            {/* Suggested Image: Professional African engineers/team in office */}
+            <div className="h-[500px] rounded-3xl bg-gradient-to-br from-[#0A2C5A] to-[#3BA4F7]"></div>
+          </div>
+
+          <div>
+            <p className="text-[#3BA4F7] font-semibold uppercase tracking-widest mb-4">
+              About PearEdge
+            </p>
+
+            <h2 className="text-4xl lg:text-5xl font-black leading-tight">
+              Technology Infrastructure, Education & Innovation.
+            </h2>
+
+            <p className="mt-8 text-lg leading-relaxed text-slate-600 dark:text-slate-300">
+              PEAREDGE TECHNOLOGIES LTD was established to bridge the growing
+              technology and educational gap across Africa through accessible ICT
+              solutions, practical STEM education, and intelligent systems
+              innovation.
+            </p>
+
+            <p className="mt-6 text-lg leading-relaxed text-slate-600 dark:text-slate-300">
+              We combine enterprise-level technology support, future-focused
+              learning, and research-driven innovation to empower individuals,
+              organizations, and communities.
+            </p>
+
+            <div className="grid md:grid-cols-2 gap-5 mt-10">
+              <div className="bg-white dark:bg-[#07111F] rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-800">
+                <h3 className="font-bold text-xl">Mission</h3>
+                <p className="mt-3 text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                  To empower Africa through accessible technology solutions,
+                  practical digital education, and intelligent innovation.
+                </p>
+              </div>
+
+              <div className="bg-white dark:bg-[#07111F] rounded-2xl p-6 shadow-sm border border-slate-100 dark:border-slate-800">
+                <h3 className="font-bold text-xl">Vision</h3>
+                <p className="mt-3 text-slate-600 dark:text-slate-300 text-sm leading-relaxed">
+                  To become one of Africa’s leading technology ecosystems in ICT,
+                  STEM education, and smart systems innovation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= SERVICES ================= */}
+      <section id="services" className="py-28">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-3xl">
+            <p className="text-[#3BA4F7] font-semibold uppercase tracking-widest mb-4">
+              ICT Solutions
+            </p>
+
+            <h2 className="text-4xl lg:text-5xl font-black leading-tight">
+              Enterprise IT Support & Technology Infrastructure.
+            </h2>
+
+            <p className="mt-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+              Professional onsite and remote technology solutions for
+              organizations and individuals across Nigeria.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8 mt-16">
+            {[
+              {
+                title: 'Onsite Computer Repairs',
+                desc: 'Professional onsite support for laptops, desktops, tablets, and mobile devices with warranty-backed repairs.',
+              },
+              {
+                title: 'IT Support & Maintenance',
+                desc: 'Remote and onsite maintenance plans, emergency support, and structured ICT retainership services.',
+              },
+              {
+                title: 'Computer Procurement',
+                desc: 'Trusted sourcing of genuine products with additional support warranty and post-purchase maintenance benefits.',
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="group rounded-3xl border border-slate-200 dark:border-slate-800 p-8 hover:bg-[#0A2C5A] transition duration-500"
+              >
+                <div className="w-14 h-14 rounded-2xl bg-[#3BA4F7]/10 flex items-center justify-center text-[#3BA4F7] font-bold text-xl">
+                  0{index + 1}
+                </div>
+
+                <h3 className="mt-8 text-2xl font-bold group-hover:text-white transition">
+                  {item.title}
+                </h3>
+
+                <p className="mt-5 text-slate-600 dark:text-slate-300 group-hover:text-slate-200 transition leading-relaxed">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-5 mt-16">
+            {[
+              'Same-Day Support',
+              'Remote Assistance',
+              'Pickup & Delivery',
+              'Warranty on Repairs',
+              'Qualified Engineers',
+              'Flexible Payments',
+              'Retainer Plans',
+              'Enterprise Support',
+            ].map((feature, index) => (
+              <div
+                key={index}
+                className="bg-slate-50 dark:bg-[#0B1728] rounded-2xl px-5 py-6 text-center font-semibold"
+              >
+                {feature}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= STEM ================= */}
+      <section id="stem" className="py-28 bg-[#07111F] text-white relative overflow-hidden">
+        <div className="absolute top-0 right-0 w-96 h-96 bg-[#D4AF37]/20 blur-[120px]"></div>
+
+        <div className="relative max-w-7xl mx-auto px-6">
+          <div className="max-w-3xl">
+            <p className="text-[#D4AF37] font-semibold uppercase tracking-widest mb-4">
+              STEM Education
+            </p>
+
+            <h2 className="text-4xl lg:text-5xl font-black leading-tight">
+              Building Africa’s Next Generation of Innovators.
+            </h2>
+
+            <p className="mt-6 text-lg text-slate-300 leading-relaxed">
+              Practical technology education focused on monetizable digital
+              skills, creativity, innovation, and future career readiness.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-4 gap-8 mt-16">
+            {[
+              {
+                title: 'Kids Lower (6–8)',
+                desc: 'Foundational digital literacy and interactive computer learning.',
+              },
+              {
+                title: 'Kids (9–12)',
+                desc: 'Creative coding, robotics introduction, and practical ICT skills.',
+              },
+              {
+                title: 'Teens (13–17)',
+                desc: 'Coding, robotics, electronics, and future technology pathways.',
+              },
+              {
+                title: 'Youths (18–25)',
+                desc: 'Career-focused technology education and monetizable digital skills.',
+              },
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="rounded-3xl bg-white/5 border border-white/10 backdrop-blur p-8 hover:border-[#D4AF37] transition"
+              >
+                <h3 className="text-2xl font-bold text-[#D4AF37]">
+                  {item.title}
+                </h3>
+
+                <p className="mt-5 text-slate-300 leading-relaxed text-sm">
+                  {item.desc}
+                </p>
+              </div>
+            ))}
+          </div>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mt-16">
+            {[
+              'Coding',
+              'Robotics',
+              'Electronics',
+              'Digital Skills',
+              'Holiday Bootcamps',
+              'Competitions',
+              'Certifications',
+              'School Partnerships',
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="border border-white/10 rounded-2xl px-6 py-5 text-center bg-white/5"
+              >
+                {item}
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= SMART SYSTEMS ================= */}
+      <section id="innovation" className="py-28">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-3xl">
+            <p className="text-[#3BA4F7] font-semibold uppercase tracking-widest mb-4">
+              Smart Systems & Innovation
+            </p>
+
+            <h2 className="text-4xl lg:text-5xl font-black leading-tight">
+              Intelligent Systems for African Challenges.
+            </h2>
+
+            <p className="mt-6 text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
+              A future-focused innovation division researching and developing
+              intelligent systems using EdgeML, IoT, robotics, AI automation,
+              and embedded technologies.
+            </p>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8 mt-16">
+            {[
+              'EdgeML Systems',
+              'AI Automation',
+              'Computer Vision',
+              'IoT Solutions',
+              'Smart Agriculture',
+              'Smart Healthcare',
+              'Smart Education',
+              'Embedded Systems',
+              'Robotics Innovation',
+            ].map((item, index) => (
+              <div
+                key={index}
+                className="relative overflow-hidden rounded-3xl border border-slate-200 dark:border-slate-800 p-8 bg-white dark:bg-[#0B1728]"
+              >
+                <div className="absolute top-0 right-0 w-40 h-40 bg-[#3BA4F7]/10 blur-[80px]"></div>
+
+                <h3 className="relative text-2xl font-bold">
+                  {item}
+                </h3>
+
+                <p className="relative mt-5 text-slate-600 dark:text-slate-300 leading-relaxed text-sm">
+                  Research and innovation focused on scalable intelligent systems
+                  designed to solve practical African challenges.
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= PROJECTS ================= */}
+      <section id="projects" className="py-28 bg-slate-50 dark:bg-[#0B1728]">
+        <div className="max-w-7xl mx-auto px-6">
+          <div className="max-w-3xl">
+            <p className="text-[#3BA4F7] font-semibold uppercase tracking-widest mb-4">
+              Projects & Activities
+            </p>
+
+            <h2 className="text-4xl lg:text-5xl font-black leading-tight">
+              Building Impact Through Technology.
+            </h2>
+          </div>
+
+          <div className="grid lg:grid-cols-3 gap-8 mt-16">
+            {[1, 2, 3].map((item) => (
+              <div
+                key={item}
+                className="bg-white dark:bg-[#07111F] rounded-3xl overflow-hidden border border-slate-100 dark:border-slate-800"
+              >
+                {/* Replace with actual project images */}
+                {/* Suggested images:
+                    - Engineers fixing enterprise systems
+                    - Robotics classes
+                    - Coding bootcamps
+                    - Smart systems prototypes
+                */}
+                <div className="h-64 bg-gradient-to-br from-[#0A2C5A] to-[#3BA4F7]"></div>
+
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold">
+                    Featured Project
+                  </h3>
+
+                  <p className="mt-4 text-slate-600 dark:text-slate-300 leading-relaxed text-sm">
+                    Showcase successful ICT projects, STEM workshops, robotics
+                    programs, innovation prototypes, and technology activities.
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* ================= CTA ================= */}
+      <section className="py-28 bg-gradient-to-r from-[#0A2C5A] to-[#3BA4F7] text-white">
+        <div className="max-w-5xl mx-auto px-6 text-center">
+          <h2 className="text-4xl lg:text-6xl font-black leading-tight">
+            Let’s Build Africa’s Future Together.
+          </h2>
+
+          <p className="mt-8 text-lg text-slate-200 max-w-3xl mx-auto leading-relaxed">
+            Whether you need enterprise ICT support, future-ready STEM
+            education, or collaboration on intelligent systems innovation,
+            PEAREDGE TECHNOLOGIES LTD is ready to partner with you.
+          </p>
+
+          <div className="flex flex-wrap justify-center gap-5 mt-10">
+            <a
+              href="mailto:info@pearedgetech.com.ng"
+              className="bg-white text-[#0A2C5A] hover:bg-[#07111F] hover:text-white px-8 py-4 rounded-2xl font-semibold transition"
+            >
+              Contact Us
+            </a>
+
+            <a
+              href="https://wa.me/2347076339314"
+              className="border border-white/20 hover:bg-white/10 px-8 py-4 rounded-2xl font-semibold transition"
+            >
+              WhatsApp Support
+            </a>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= FOOTER ================= */}
+      <footer id="contact" className="py-20 bg-[#07111F] text-white">
+        <div className="max-w-7xl mx-auto px-6 grid lg:grid-cols-4 gap-12">
+          <div>
+            <h3 className="text-2xl font-black">PEAREDGE TECHNOLOGIES LTD</h3>
+
+            <p className="mt-5 text-slate-400 leading-relaxed">
+              Empowering Africa through technology infrastructure, practical
+              digital education, and intelligent innovation.
+            </p>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-lg">Company</h4>
+
+            <ul className="space-y-3 mt-5 text-slate-400">
+              <li><a href="#about">About</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#innovation">Innovation</a></li>
+              <li><a href="#contact">Contact</a></li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-lg">Services</h4>
+
+            <ul className="space-y-3 mt-5 text-slate-400">
+              <li>ICT Support</li>
+              <li>Computer Repairs</li>
+              <li>STEM Education</li>
+              <li>Smart Systems</li>
+            </ul>
+          </div>
+
+          <div>
+            <h4 className="font-bold text-lg">Contact</h4>
+
+            <ul className="space-y-3 mt-5 text-slate-400">
+              <li>Lagos, Nigeria</li>
+              <li>07076339314</li>
+              <li>info@pearedgetech.com.ng</li>
+              <li>@pearedgetech</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="border-t border-white/10 mt-16 pt-8 text-center text-slate-500 text-sm">
+          © 2025 PEAREDGE TECHNOLOGIES LTD. All rights reserved.
+        </div>
+      </footer>
     </div>
-  </div>
-
-</body>
-</html>
+  )
+}
